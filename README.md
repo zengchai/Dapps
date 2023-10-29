@@ -95,7 +95,9 @@ Before you begin, ensure you have met the following requirements:
 
 ### Reminder
 
-Install the MetaMask extension for your browser if you haven't already. Once installed, add the custom network with the following details:
+***Install the MetaMask extension for your browser if you haven't already***
+
+Once installed, add the custom network with the following details:
 
 Network Name: Hardhat (or any name you prefer)
 
