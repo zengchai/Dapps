@@ -20,11 +20,12 @@ Before you begin, ensure you have met the following requirements:
 
    git clone https://github.com/zengchai/Dapps.git
 
-Install the necessary dependencies for each part of the project:
+
+2. Install the necessary dependencies for each part of the project:
 
 In the server directory:
 
-   cd server
+- cd server
    npm install
 
 In the ethereum directory:
