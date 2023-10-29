@@ -93,11 +93,17 @@ Before you begin, ensure you have met the following requirements:
 
 
 
-### Install the MetaMask extension for your browser if you haven't already. Once installed, add the custom network with the following details:
+### Reminder
+
+Install the MetaMask extension for your browser if you haven't already. Once installed, add the custom network with the following details:
 
 Network Name: Hardhat (or any name you prefer)
+
 New RPC URL: http://localhost:8545
+
 Chain ID: 31337
+
 Currency Symbol: ETH
+
 
 You're now ready to use your application. Happy coding!
