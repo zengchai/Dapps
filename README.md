@@ -25,9 +25,9 @@ Before you begin, ensure you have met the following requirements:
 
 In the server directory:
 
-~~~cd server~~~
+``` cd server ```
 
-~~~npm install~~~
+``` npm install ```
 
 In the ethereum directory:
 
