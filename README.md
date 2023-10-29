@@ -21,43 +21,77 @@ Before you begin, ensure you have met the following requirements:
 ``` git clone https://github.com/zengchai/Dapps.git ```
 
 
+
 2. Install the necessary dependencies for each part of the project:
+
 
 - In the server directory:
 
+
 ``` cd server ``` 
 
+
 ``` npm install ```
+
 
 - In the ethereum directory:
 
+
 ``` cd ethereum ```
+
+
 ``` npm install ```
+
 
 - In the client directory:
 
+
 ``` cd client ```
+
+
 ``` npm install ```
+
+
 
 3. Start the backend server:
 
+
 ``` cd server ```
+
+
 ``` node app.js ```
+
+
 
 4. Start the local Ethereum development network:
 
+
 ``` cd ethereum ```
+
+
 ``` npx hardhat node ```
+
+
 
 5. Deploy the smart contract to the local network:
 
+
 ``` cd ethereum ```
+
+
 ``` npx hardhat run scripts/deploy.js --network hardhat ```
+
+
 
 6. Start the frontend:
 
+
 ``` cd client ```
+
+
 ``` npm start ```
+
+
 
 ### Install the MetaMask extension for your browser if you haven't already. Once installed, add the custom network with the following details:
 
