@@ -39,6 +39,9 @@ cd server
 node app.js
 
 Start the local Ethereum development network:
+
+shell
+Copy code
 cd ethereum
 npx hardhat node
 
