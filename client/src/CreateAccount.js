@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 function CreateAccount() {
     const [newAccount, setNewAccount] = useState(null);
+    const [privateKeyInput, setPrivateKeyInput] = useState('');
+    const [privateKeyToPass, setPrivateKeyToPass] = useState('');
 
     const handleCreateAccount = async () => {
         try {
-            const response = await axios.post('http://localhost:4000/create-account');
-            setNewAccount(response.data);
+            const response = await fetch('http://localhost:4000/create-account', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ privateKey: privateKeyInput }), // Use privateKeyInput
+            });
+            const data = await response.json();
+            setNewAccount(data);
         } catch (error) {
             console.error('Error creating account:', error);
         }
@@ -16,11 +24,14 @@ function CreateAccount() {
     return (
         <div>
             <h2>Create Account</h2>
-            <button onClick={handleCreateAccount}>Create New Account</button>
-            {newAccount && (
+            {newAccount ? (
                 <div>
                     <p>Address: {newAccount.address}</p>
                     <p>Private Key: {newAccount.privateKey}</p>
+                </div>
+            ) : (
+                <div>
+                    <button onClick={handleCreateAccount}>Create New Account</button>
                 </div>
             )}
         </div>

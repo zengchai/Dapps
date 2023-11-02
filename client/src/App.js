@@ -2,6 +2,7 @@ import React from 'react';
 import CreateAccount from './CreateAccount';
 import TransferEth from './TransferEth';
 import CheckBalance from './CheckBalance';
+import StorageApp from './StorageApp';
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <CreateAccount />
             <TransferEth />
             <CheckBalance />
+            <StorageApp />
         </div>
     );
 }

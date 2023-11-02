@@ -1,0 +1,50 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "YourSolidityContract",
+  "sourceName": "contracts/YourSolidityContract.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValueChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060fc8061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80632096525514603757806355241077146051575b600080fd5b603d6062565b6040516048919060bd565b60405180910390f35b6060605c36600460a6565b6068565b005b60005490565b60008190556040517f93fe6d397c74fdf1402a8b72e47b68512f0510d7b98a4bc4cbdf6ac7108b3c5990609b90839060bd565b60405180910390a150565b60006020828403121560b6578081fd5b5035919050565b9081526020019056fea2646970667358221220d55a61a72a85710a9f7b461c8f7c1a4dbde0f51a99892625051343b9ae26fed664736f6c63430008000033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80632096525514603757806355241077146051575b600080fd5b603d6062565b6040516048919060bd565b60405180910390f35b6060605c36600460a6565b6068565b005b60005490565b60008190556040517f93fe6d397c74fdf1402a8b72e47b68512f0510d7b98a4bc4cbdf6ac7108b3c5990609b90839060bd565b60405180910390a150565b60006020828403121560b6578081fd5b5035919050565b9081526020019056fea2646970667358221220d55a61a72a85710a9f7b461c8f7c1a4dbde0f51a99892625051343b9ae26fed664736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
