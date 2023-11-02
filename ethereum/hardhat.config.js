@@ -19,7 +19,7 @@ module.exports = {
   },  
   defaultNetwork: "hardhat",
   solidity: {
-    version: "0.8.19",
+    version: "0.8.0",
     settings: {
       optimizer: {
         enabled: true,
@@ -27,9 +27,10 @@ module.exports = {
       }
     }
   },
+  
   paths: {
-    sources: "./contracts",
-    artifacts: "./artifacts",
+    sources: "./contracts", // Path to your Solidity contract files
+    artifacts: "./artifacts", // Path where Hardhat stores compiled contract artifacts
   },
   mocha: {
     timeout: 40000
